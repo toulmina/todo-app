@@ -1,3 +1,4 @@
+/*standard body properties*/
 body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -21,6 +22,7 @@ img {
     padding-left:85%
 }
 
+/*adjusts padding for icon*/
 #socialicons li:last-of-type{
     padding-left: 10%;
 }
@@ -32,11 +34,11 @@ img {
     margin-bottom:5%;
 }
 
-
 #logo{
     width:15%;
     position: absolute;
     z-index:2;
+    /*z index helps logo float over bar*/
     margin-top: 3%;
 }
 
@@ -51,8 +53,8 @@ img {
     margin-top: 5%;
     background-color: rgba(255, 123, 172, 0.27);
     z-index: 1;
+    /*z index helps logo float over bar*/
 }
-
 
 ul {
     list-style-type: none;
@@ -70,12 +72,13 @@ ul {
     color: #4A4A4A;
     padding-left: 50px;
     font-weight: 100;
+    /*adjusts to Roboto Light*/
 }
 
+/*adjusts padding for last navigation button*/
 .nav li:last-of-type{
     padding-right: 50px;
 }
-
 
 .nav li a {
     display: block;
@@ -85,6 +88,7 @@ ul {
     text-decoration: none;
 }
 
+/*pink shadow on hover*/
 .nav li a:hover {
     background-color: rgba(255, 123, 172, 0.27);
 }
@@ -93,7 +97,6 @@ ul {
     display: inline;
 }
 
-
 .leftcontent{
     float:left;
     position:relative;
@@ -101,6 +104,7 @@ ul {
     margin-right:0%;
 }
 
+/*margins for content under header*/
 .contentblock{
     margin-left:15%;
     margin-right:10%;
@@ -110,14 +114,15 @@ ul {
     max-width:50%;
     position: relative;
     z-index:2;
+    /*allows shipping pic on top of bun image*/
     padding-top:100%;
 }
 
 #bunimage {
     position:absolute;
     z-index: 1;
+    /*allows shipping pic on top of bun image*/
 }
-
 
 .rightcontent{
     float:right;
@@ -125,10 +130,9 @@ ul {
     background-color: #EAEAEA;
     box-shadow: 8px 8px 6px #958585;
     padding-left: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     padding-right: 5%;
-    padding-top:5%;
-
+    padding-top:2%;
 }
 
 h1{
@@ -144,21 +148,19 @@ p {
     font-weight:100;
 }
 
-.signaturebox{
-    float:right;
-    padding-top: 2%;
-}
-
 #signatureimg{
     max-width: 45%;
+    position:relative;
     float:right;
+    position:inline-block;
 }
-
 
 #signatureline {
     float:right;
     font-size:12px;
     font-style: italic;
+    width: 100%;
+    text-align:right;
 }
 
 #thumb{
@@ -166,13 +168,13 @@ p {
     padding-bottom:4%;
 }
 
-
 #name {
     width:8%;
     padding-right:6%;
     padding-bottom:4%;
-
 }
+
+/*strips links of their formatting to make menu items*/
 #name a {
     text-decoration: none;
     color:#5A5A5A;
@@ -186,11 +188,12 @@ p {
     width:100%;
     display:inline-block;
     margin-bottom: 3%;
+    margin-top:3%;
 }
 
 h2{
     display:inline;
-    padding-right: 4%;
+    padding-right: 7%;
     color: rgba(255, 123, 172, 0.27);
     font-style: italic;
 }
@@ -200,15 +203,12 @@ h2{
     border-bottom: .5px solid #5A5A5A;
   }
 
-#otherflavors u:after {
-    content: "......................";
-    color: transparent;
-}
-
+/*makes anything underneath lose opacity*/
 #greyout{
     opacity: 0.3;
     filter: alpha(opacity=30);
     z-index:1;
+    /*allows solid popup on top of background*/
     position:fixed;
     width:65%;
     margin-top:15%
@@ -219,18 +219,29 @@ h2{
     box-shadow: 0px 2px 4px #958585;
     position:fixed;
     z-index:2;
+    /*allows solid popup on top of background*/
     margin-top:20%;
     margin-left:5%;
-        width: 50%;
+    width: 50%;
     padding-top: 3%;
     padding-bottom: 3%;
+}
 
+#confirmationpopup {
+   background-color:#eAeAeA;
+    box-shadow: 0px 2px 4px #958585;
+    position:fixed;
+    z-index:2;
+    /*allows solid popup on top of background*/
+    margin-top:20%;
+    margin-left:5%;
+    width: 50%;
+    padding: 3%;
 }
 
 #bunproductimage {
     width:90%;
 }
-
 
 #leftpopup{
     float:left;
@@ -238,7 +249,6 @@ h2{
     width:40%;
     display:block;
 }
-
 
 #rightpopup p{
     text-align: left;
@@ -260,12 +270,11 @@ h2{
     padding-top:2%
 }
 
-#closebutton a:hover{
-    background-color: hotpink;
+#closebutton:hover{
+   color:hotpink;
 }
 
 #cartbutton{
-    margin-right:5%;
     text-decoration:none;
     text-align:center;
     font-size:14px;
@@ -275,13 +284,13 @@ h2{
     border:none;
     box-shadow: 0px 2px 4px #958585;
     background-color:rgba(255, 123, 172, 0.27);
-    float:right;
     margin-right: 5%;
-    margin-bottom:5%;
+    position:relative;
+    float:right;
 }
 
 #returnbutton{
-    margin-left:40%;
+    margin-left:5%;
     text-decoration:none;
     text-align:center;
     font-size:14px;
@@ -290,7 +299,18 @@ h2{
     color:#5A5A5A;
     border:none;
     box-shadow: 0px 2px 4px #958585;
-    background-color:rgba(255, 123, 172, 0.27);
-    margin-right: 5%;
+    background-color:lightgrey;
     margin-bottom:5%;
+    position:relative;
+    float:left;
+}
+
+/*adds shadows to our main buttons*/
+
+#returnbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#cartbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
